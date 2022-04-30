@@ -20,9 +20,6 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-
-
-
 cacheSolve <- function(x, ...) {
  
   inverse <- x$getinverse()
@@ -33,7 +30,6 @@ cacheSolve <- function(x, ...) {
     return(inverse)
   }
   
-  # otherwise, calculates the inverse 
   data = x$get()
   inverse <- solve(data, ...)
  
